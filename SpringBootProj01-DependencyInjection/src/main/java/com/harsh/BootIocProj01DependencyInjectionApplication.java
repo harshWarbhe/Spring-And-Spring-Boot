@@ -11,6 +11,14 @@ import org.springframework.context.annotation.Bean;
 import com.harsh.sbeans.SeasonFinder;
 
 @SpringBootApplication
+
+/*
+ * @Configuration / @SpringBootConfiguration
+ * 
+ * @AutoConfiguration
+ * 
+ * @ComponentScan
+ */
 public class BootIocProj01DependencyInjectionApplication {
 
 	/*
@@ -29,7 +37,7 @@ public class BootIocProj01DependencyInjectionApplication {
 	public static void main(String[] args) {
 
 		//get ioc container
-		ConfigurableApplicationContext ctx = SpringApplication.run(BootIocProj01DependencyInjectionApplication.class,args);
+		ConfigurableApplicationContext ctx = SpringApplication.run(BootIocProj01DependencyInjectionApplication.class);
 		
 		//get target spring bean class obj  ref
 		SeasonFinder finder = ctx.getBean("sf", SeasonFinder.class);
