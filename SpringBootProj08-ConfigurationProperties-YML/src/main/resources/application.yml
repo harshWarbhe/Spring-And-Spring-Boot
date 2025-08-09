@@ -1,0 +1,32 @@
+# Conversion to YAML from Properties formar report
+# Errors:
+# - Direct assignment 'org.h.nickName=harshu, dadu' can not be combined with sequence assignment 'org.h.nickName[0]...'. Direct assignments are dropped!
+# - Direct assignment 'org.h.PhoneNumber=8888888888, 9999999999' can not be combined with sequence assignment 'org.h.PhoneNumber[0]...'. Direct assignments are dropped!
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: SpringBootProj08ConfigurationPropertiesYML
+org:
+  h:
+    eno: 1001
+    name: harsh
+    favColor:
+    - black
+    - white
+    - red
+    nickName:
+    - dadu
+    - harshu
+    PhoneNumber:
+    - 9999999999
+    - 8888888888
+    idDetails:
+      aadharID: 123412341234;
+      voterID: ASDFG1234;
+      passportID: 1234123412;
+    company:
+      id: 555
+      name: warbhe pvt lmt
+      addrs: warora
+      size: 100000
