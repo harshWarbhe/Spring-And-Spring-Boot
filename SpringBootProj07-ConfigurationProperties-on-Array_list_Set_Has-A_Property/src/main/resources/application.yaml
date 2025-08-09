@@ -1,0 +1,8 @@
+#customer info
+
+cust:
+ info:
+  id: 1001
+  name: harsh pvt
+  addrs: warora
+  size: 10000
