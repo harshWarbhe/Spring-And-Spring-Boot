@@ -1,0 +1,51 @@
+# Activate Profile
+spring:
+  profiles:
+    active: prod
+---
+# Define dev profile
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Admin123
+    url: jdbc:mysql:///harsh1
+    type: org.apache.commons.dbcp2.BasicDataSource
+---
+# Define test profile
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Admin123
+    url: jdbc:mysql:///harsh1
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+---
+# Define uat profile
+spring:
+  config:
+    activate:
+      on-profile: uat
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: harsh
+    password: tiger
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    type: oracle.ucp.jdbc.PoolDataSourceImpl
+---
+# Define prod profile
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: harsh
+    password: tiger
+    url: jdbc:oracle:thin:@localhost:1521:orcl
