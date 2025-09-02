@@ -11,10 +11,10 @@
 	<%@ page isELIgnored="false"%>
 
 	<br>
-	<b>student data : ${stud}</b>
+	<b style="text-align: center;">student data : ${stud}</b>
 
 	<br>
-	<a href="./"><img src=images/home.png></a>
+	<a href="./" style="text-align: center;"><img src=images/home.png height="100" width="100"></a>
 
 </body>
 </html>
